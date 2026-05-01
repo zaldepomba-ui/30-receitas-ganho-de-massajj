@@ -68,7 +68,7 @@ const Index = () => {
               30 receitas práticas, ricas em proteína e feitas para quem treina sério.
             </p>
             
-            <a href="#checkout" className="w-full md:w-auto text-center bg-gradient-to-r from-yellow-300 to-yellow-600 rounded-full font-sans font-bold text-gray-900 tracking-wide uppercase px-10 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(234,179,8,0.4)] mt-2">
+            <a href="https://pay.kiwify.com.br/YbSXoVv" className="w-full md:w-auto text-center bg-gradient-to-r from-yellow-300 to-yellow-600 rounded-full font-sans font-bold text-gray-900 tracking-wide uppercase px-10 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(234,179,8,0.4)] mt-2">
               QUERO MINHAS 30 RECEITAS — R$22,80
             </a>
             
@@ -309,7 +309,7 @@ const Index = () => {
             <div className="text-6xl font-heading text-white leading-none mt-1">R$ 22,80</div>
           </div>
           
-          <a href="#" className="w-full block text-center bg-gradient-to-r from-yellow-300 to-yellow-600 rounded-full font-sans font-bold text-gray-900 tracking-wide uppercase py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(234,179,8,0.4)] mb-6">
+          <a href="https://pay.kiwify.com.br/YbSXoVv" className="w-full block text-center bg-gradient-to-r from-yellow-300 to-yellow-600 rounded-full font-sans font-bold text-gray-900 tracking-wide uppercase py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(234,179,8,0.4)] mb-6">
             QUERO ACESSAR AGORA
           </a>
           
