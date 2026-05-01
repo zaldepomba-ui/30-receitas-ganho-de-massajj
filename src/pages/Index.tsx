@@ -1,41 +1,6 @@
 import { useEffect } from "react";
-import { Play, CheckCircle2, Zap, BicepsFlexed, Drumstick, Salad, Gift, Lock, Timer, Brain, Star, ChevronDown } from "lucide-react";
-
-const PremiumTimer = ({ size = 40 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="128" cy="136" r="88" fill="currentColor" fillOpacity="0.15" />
-    <circle cx="128" cy="136" r="88" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-    <line x1="128" y1="88" x2="128" y2="136" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-    <line x1="128" y1="136" x2="160" y2="152" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-    <line x1="104" y1="24" x2="152" y2="24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-    <line x1="184.56" y1="65.44" x2="207.18" y2="42.82" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-  </svg>
-);
-
-const PremiumBrain = ({ size = 40 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M128,88c0-30.93,25.07-56,56-56s56,25.07,56,56c0,20.89-11.45,39.06-28.53,48.64a8,8,0,0,1-3.66,1.25L184,140a24,24,0,0,0-24,24v60" fill="currentColor" fillOpacity="0.15" />
-    <path d="M128,88c0-30.93-25.07-56-56-56S16,57.07,16,88c0,20.89,11.45,39.06,28.53,48.64a8,8,0,0,0,3.66,1.25L72,140a24,24,0,0,1,24,24v60" fill="currentColor" fillOpacity="0.15" />
-    <path d="M128,88V224" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-    <path d="M128,88c0-30.93,25.07-56,56-56s56,25.07,56,56c0,20.89-11.45,39.06-28.53,48.64a8,8,0,0,1-3.66,1.25L184,140a24,24,0,0,0-24,24v60" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-    <path d="M128,88c0-30.93-25.07-56-56-56S16,57.07,16,88c0,20.89,11.45,39.06,28.53,48.64a8,8,0,0,0,3.66,1.25L72,140a24,24,0,0,1,24,24v60" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-    <path d="M64,88a24,24,0,1,1,24-24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-    <path d="M192,88a24,24,0,1,0-24-24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-    <line x1="88" y1="120" x2="168" y2="120" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16" />
-  </svg>
-);
-
-const PremiumBiceps = ({ size = 40 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12.4 13A5 5 0 0 1 22 15c0 3.87-4 7-10 7-4.08 0-8.15-2-10-7-1.43-3.92 2.37-6.07 5-6 1.7.05 3.15 1.16 4 2.5" fill="currentColor" fillOpacity="0.15" />
-    <path d="M12.4 13A5 5 0 0 1 22 15c0 3.87-4 7-10 7-4.08 0-8.15-2-10-7-1.43-3.92 2.37-6.07 5-6 1.7.05 3.15 1.16 4 2.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M15 17h.01" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M18.16 9.48 22 5.09a1.59 1.59 0 0 0-2.34-2.17l-4.13 4.38" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M21 7.27a3 3 0 0 0-4.04-4.15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M20.22 8.16a3 3 0 0 0-4.23-4.03" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M5.59 15.54a4.98 4.98 0 0 1-2.59-4.54" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
+import { CheckCircle2, Zap, BicepsFlexed, Drumstick, Salad, Gift, Lock, Star, ChevronDown } from "lucide-react";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const Index = () => {
   useEffect(() => {
@@ -121,15 +86,20 @@ const Index = () => {
           <div className="lg:col-span-5 flex justify-center fade-in-section" style={{ transitionDelay: '0.2s' }}>
             <div className="relative w-full max-w-2xl -mt-12 lg:-mt-32">
               {/* Muscular Pigeon Hero Image */}
-              <div className="relative group">
-                <video 
-                  src="/video33.hero.mp4" 
+              <div className="relative group scale-100 lg:scale-110 transform origin-center">
+                <video
                   autoPlay
                   loop
                   muted
                   playsInline
-                  className="relative z-10 w-full h-auto border-none outline-none scale-100 lg:scale-110 transform origin-center"
-                />
+                  poster="/video33.hero-poster.webp"
+                  className="relative z-10 w-full h-auto border-none outline-none"
+                >
+                  <source src="/video33.hero.webm" type="video/webm" />
+                  <source src="/video33.hero.optimized.mp4" type="video/mp4" />
+                </video>
+                {/* Efeito de blur/sombra preto na parte inferior para mesclar com o fundo */}
+                <div className="absolute -bottom-1 left-0 w-full h-20 bg-gradient-to-t from-black to-transparent z-20 pointer-events-none blur-sm" />
               </div>
             </div>
           </div>
@@ -145,11 +115,15 @@ const Index = () => {
             Veja o que você vai <span className="text-gold">receber</span>
           </h2>
           
-          <video 
-            src="/video-explicativo.mp4" 
-            controls 
+          <video
+            controls
+            preload="metadata"
+            poster="/video-explicativo-poster.webp"
             className="w-full aspect-video bg-black rounded-xl border border-gold gold-glow relative overflow-hidden mb-12"
-          />
+          >
+            <source src="/video-explicativo.webm" type="video/webm" />
+            <source src="/video-explicativo.optimized.mp4" type="video/mp4" />
+          </video>
 
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 w-full justify-center">
             <div className="flex items-center gap-3 text-lg font-subheading">
@@ -238,7 +212,14 @@ const Index = () => {
             ].map((recipe, i) => (
               <div key={i} className="flex flex-col gap-4 fade-in-section stagger-item opacity-0 translate-y-8" style={{ transition: 'opacity 0.6s ease-out, transform 0.6s ease-out' }}>
                 <div className="img-zoom-container w-full aspect-square rounded-2xl overflow-hidden relative shadow-lg">
-                  <img src={recipe.img} alt={recipe.name} loading="lazy" className="img-zoom w-full h-full object-cover" />
+                  <OptimizedImage
+                    src={recipe.img}
+                    alt={recipe.name}
+                    loading="lazy"
+                    width={1024}
+                    height={1024}
+                    className="img-zoom w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-dark)] to-transparent opacity-60"></div>
                 </div>
                 <div className="flex flex-row justify-between items-center w-full mt-2 px-2 gap-3">
@@ -268,7 +249,14 @@ const Index = () => {
             ].map((feat, i) => (
               <div key={i} className="flex flex-col items-center fade-in-section stagger-item opacity-0 translate-y-8" style={{ transition: 'opacity 0.6s ease-out, transform 0.6s ease-out' }}>
                 <div className="w-20 h-20 rounded-2xl bg-[rgba(245,166,35,0.1)] border border-[rgba(245,166,35,0.3)] flex items-center justify-center mb-6 text-gold">
-                  <img src={feat.img.src} alt={feat.img.alt} className="w-full h-full object-contain" />
+                  <OptimizedImage
+                    src={feat.img.src}
+                    alt={feat.img.alt}
+                    loading="lazy"
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <h3 className="font-heading text-2xl text-white uppercase mb-3">{feat.title}</h3>
                 <p className="text-muted font-body max-w-xs">{feat.desc}</p>

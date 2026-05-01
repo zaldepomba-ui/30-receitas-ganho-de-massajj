@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Download, Infinity } from "lucide-react";
+import { ShieldCheck, Download, Infinity as InfinityIcon } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -37,7 +37,7 @@ const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-muted-foreground font-body">
             <span className="flex items-center gap-2"><Download className="w-4 h-4 text-primary" /> Download Imediato</span>
-            <span className="flex items-center gap-2"><Infinity className="w-4 h-4 text-primary" /> Acesso Vitalício</span>
+            <span className="flex items-center gap-2"><InfinityIcon className="w-4 h-4 text-primary" /> Acesso Vitalício</span>
             <span className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-primary" /> Garantia de 7 Dias</span>
           </div>
         </motion.div>
